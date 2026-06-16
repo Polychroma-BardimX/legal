@@ -90,12 +90,13 @@
 
         /* Policy Section Visibility */
         .policy-section {
-            display: none; /* Ukryte domyślnie, kontrolowane przez JS */
+            display: none; 
         }
         
         ul { margin-top: 10px; margin-bottom: 20px; padding-left: 20px; color: #334155; }
         p { color: #334155; }
         code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; color: #0284c7;}
+        .highlight-notice { background: #e0f2fe; padding: 15px; border-left: 4px solid #0284c7; border-radius: 0 8px 8px 0; margin: 15px 0; font-size: 0.95em; color: #0f172a;}
         
         @media (max-width: 600px) {
             .policy-nav { flex-direction: column; align-items: stretch; }
@@ -131,7 +132,7 @@
         </div>
 
         <!-- ============================================== -->
-        <!-- IDEAON POLICIES (5 Languages) -->
+        <!-- IDEAON POLICIES -->
         <!-- ============================================== -->
         
         <!-- EN -->
@@ -225,23 +226,29 @@
         </section>
 
         <!-- ============================================== -->
-        <!-- KINDHABIT POLICIES (5 Languages) -->
+        <!-- KINDHABIT POLICIES (UPDATED FOR GROQ/ZDR COMPLIANCE) -->
         <!-- ============================================== -->
 
         <!-- EN -->
         <section id="kindhabit-en" class="policy-section">
             <h1>Privacy Policy of KindHabit</h1>
             <p class="meta-date">Last updated: June 16, 2026</p>
-            <p>KindHabit, developed by <strong>Polychroma</strong>, is deeply committed to your privacy. This document details our minimal data footprint.</p>
-            <h2>1. Data Storage (Offline-first)</h2>
-            <p>KindHabit is designed with a strict offline-first philosophy. All your habit logs, goals, and statistics are stored exclusively on your device's local storage. We do not sync, read, or upload your habit data to any external servers.</p>
+            <p>KindHabit, developed by <strong>Polychroma</strong>, is deeply committed to your privacy. This document details our minimal data footprint and how we handle your information securely.</p>
+            
+            <h2>1. Data Storage & AI Processing</h2>
+            <p>KindHabit is designed with a core offline-first philosophy. By default, all your habit logs, goals, and statistics are stored exclusively on your device's local storage.</p>
+            <div class="highlight-notice">
+                <strong>AI Insights Feature:</strong> To provide you with personalized summaries, the notes you enter are securely transmitted on-the-fly to our third-party AI provider (Groq). Our environment operates strictly under a "Zero Data Retention" policy. This guarantees that your data is <strong>never stored or logged anywhere outside your device</strong> and is absolutely not used to train any artificial intelligence models. The provider simply processes the request and immediately forgets it.
+            </div>
+            
             <h2>2. Third-Party Services</h2>
-            <p>To ensure basic app functionality and analytics, we use standard Google services that may collect device data:</p>
+            <p>To ensure basic app functionality, we use standard Google services that may collect device data:</p>
             <ul>
                 <li>Google Play Services (for basic Android functioning)</li>
                 <li>Google Play Billing (for managing the Premium version)</li>
             </ul>
             <p><em>Note: KindHabit does not use intrusive tracking SDKs or ad networks.</em></p>
+            
             <h2>3. Payments</h2>
             <p>Any transactions related to the <code>kindhabit_premium</code> unlock are entirely handled by Google Play. Polychroma never receives or stores your payment information.</p>
         </section>
@@ -250,9 +257,14 @@
         <section id="kindhabit-pl" class="policy-section">
             <h1>Polityka Prywatności aplikacji KindHabit</h1>
             <p class="meta-date">Ostatnia aktualizacja: 16 czerwca 2026 r.</p>
-            <p>KindHabit, tworzona przez <strong>Polychroma</strong>, w pełni szanuje Twoją prywatność. Niniejszy dokument opisuje nasze minimalistyczne podejście do gromadzenia danych.</p>
-            <h2>1. Przechowywanie danych (Offline-first)</h2>
-            <p>Aplikacja KindHabit opiera się na rygorystycznej filozofii offline-first. Wszystkie Twoje nawyki, cele oraz statystyki są zapisywane wyłącznie w pamięci lokalnej Twojego urządzenia. Nie synchronizujemy, nie czytamy ani nie wysyłamy Twoich danych na żadne zewnętrzne serwery.</p>
+            <p>KindHabit, tworzona przez <strong>Polychroma</strong>, w pełni szanuje Twoją prywatność. Niniejszy dokument opisuje nasze minimalistyczne podejście do gromadzenia danych oraz zasady ich bezpiecznego przetwarzania.</p>
+            
+            <h2>1. Przechowywanie danych i przetwarzanie AI</h2>
+            <p>Aplikacja KindHabit opiera się na filozofii offline-first. Domyślnie wszystkie Twoje nawyki, cele oraz statystyki są zapisywane wyłącznie w pamięci lokalnej Twojego urządzenia.</p>
+            <div class="highlight-notice">
+                <strong>Funkcja analizy AI:</strong> W celu wygenerowania spersonalizowanych podsumowań, zapisywane przez Ciebie notatki są bezpiecznie przesyłane w locie do naszego zewnętrznego dostawcy usług AI (Groq). Nasze środowisko jest skonfigurowane w trybie "Zero Data Retention". Oznacza to, że Twoje dane <strong>nie są nigdzie przechowywane ani logowane poza Twoim urządzeniem</strong> i w żadnym wypadku nie są wykorzystywane do trenowania sztucznej inteligencji. Dostawca jedynie przetwarza zapytanie i natychmiast o nim zapomina.
+            </div>
+            
             <h2>2. Usługi podmiotów zewnętrznych</h2>
             <p>W celu zapewnienia podstawowego działania aplikacji korzystamy z usług Google, które mogą gromadzić anonimowe dane o urządzeniu:</p>
             <ul>
@@ -260,6 +272,7 @@
                 <li>Google Play Billing (do bezpiecznej obsługi zakupów wersji Premium)</li>
             </ul>
             <p><em>Uwaga: KindHabit nie wykorzystuje inwazyjnych narzędzi analitycznych ani sieci reklamowych.</em></p>
+            
             <h2>3. Płatności</h2>
             <p>Wszelkie transakcje dotyczące odblokowania wersji <code>kindhabit_premium</code> są przetwarzane wyłącznie przez Google Play. Polychroma nie przetwarza ani nie przechowuje Twoich danych płatniczych.</p>
         </section>
@@ -269,8 +282,13 @@
             <h1>Datenschutzerklärung für KindHabit</h1>
             <p class="meta-date">Letzte Aktualisierung: 16. Juni 2026</p>
             <p>KindHabit, entwickelt von <strong>Polychroma</strong>, verpflichtet sich dem Schutz Ihrer Daten. Dieses Dokument beschreibt unseren minimalen Daten-Fußabdruck.</p>
-            <h2>1. Datenspeicherung (Offline-First)</h2>
-            <p>KindHabit basiert auf einer strengen Offline-First-Philosophie. Alle Ihre Gewohnheitsprotokolle, Ziele und Statistiken werden ausschließlich im lokalen Speicher Ihres Geräts gespeichert. Wir synchronisieren, lesen oder laden Ihre Daten nicht auf externe Server hoch.</p>
+            
+            <h2>1. Datenspeicherung & KI-Verarbeitung</h2>
+            <p>KindHabit basiert im Kern auf einer Offline-First-Philosophie. Standardmäßig werden alle Ihre Gewohnheitsprotokolle, Ziele und Statistiken ausschließlich im lokalen Speicher Ihres Geräts abgelegt.</p>
+            <div class="highlight-notice">
+                <strong>KI-Analysefunktion:</strong> Um Ihnen personalisierte Zusammenfassungen zu erstellen, werden Ihre Notizen sicher und in Echtzeit an unseren externen KI-Anbieter (Groq) übermittelt. Unsere Umgebung wird streng nach einer „Zero Data Retention“-Richtlinie (keine Datenspeicherung) betrieben. Dies garantiert, dass Ihre Daten <strong>nirgendwo außerhalb Ihres Geräts gespeichert oder protokolliert werden</strong> und absolut nicht zum Trainieren von KI-Modellen verwendet werden. Der Anbieter verarbeitet lediglich die Anfrage und vergisst sie sofort.
+            </div>
+            
             <h2>2. Dienste von Drittanbietern</h2>
             <p>Um grundlegende App-Funktionalität sicherzustellen, verwenden wir Standard-Google-Dienste, die Gerätedaten sammeln können:</p>
             <ul>
@@ -278,6 +296,7 @@
                 <li>Google Play Billing (zur Verwaltung der Premium-Version)</li>
             </ul>
             <p><em>Hinweis: KindHabit verwendet keine aufdringlichen Tracking-SDKs oder Werbenetzwerke.</em></p>
+            
             <h2>3. Zahlungen</h2>
             <p>Alle Transaktionen im Zusammenhang mit <code>kindhabit_premium</code> werden vollständig über Google Play abgewickelt. Polychroma erhält oder speichert keine Zahlungsinformationen.</p>
         </section>
@@ -287,8 +306,13 @@
             <h1>Política de Privacidad de KindHabit</h1>
             <p class="meta-date">Última actualización: 16 de junio de 2026</p>
             <p>KindHabit, desarrollada por <strong>Polychroma</strong>, está profundamente comprometida con tu privacidad. Este documento detalla nuestra mínima huella de datos.</p>
-            <h2>1. Almacenamiento de datos (Offline-first)</h2>
-            <p>KindHabit está diseñada con una estricta filosofía offline-first. Todos tus registros de hábitos, metas y estadísticas se almacenan exclusivamente en el almacenamiento local de tu dispositivo. No sincronizamos, leemos ni subimos los datos de tus hábitos a servidores externos.</p>
+            
+            <h2>1. Almacenamiento de datos y Procesamiento de IA</h2>
+            <p>KindHabit está diseñada con una filosofía central offline-first. Por defecto, todos tus registros de hábitos, metas y estadísticas se almacenan exclusivamente en el almacenamiento local de tu dispositivo.</p>
+            <div class="highlight-notice">
+                <strong>Función de análisis de IA:</strong> Para proporcionarte resúmenes personalizados, las notas que ingresas se transmiten de forma segura sobre la marcha a nuestro proveedor externo de IA (Groq). Nuestro entorno opera estrictamente bajo una política de "Zero Data Retention" (Cero Retención de Datos). Esto garantiza que tus datos <strong>nunca se almacenen ni registren en ningún lugar fuera de tu dispositivo</strong> y no se utilicen en absoluto para entrenar modelos de inteligencia artificial. El proveedor simplemente procesa la solicitud y la olvida inmediatamente.
+            </div>
+            
             <h2>2. Servicios de terceros</h2>
             <p>Para asegurar la funcionalidad básica de la aplicación, utilizamos servicios estándar de Google que pueden recopilar datos del dispositivo:</p>
             <ul>
@@ -296,6 +320,7 @@
                 <li>Google Play Billing (para gestionar la versión Premium)</li>
             </ul>
             <p><em>Nota: KindHabit no utiliza SDKs de seguimiento intrusivos ni redes publicitarias.</em></p>
+            
             <h2>3. Pagos</h2>
             <p>Cualquier transacción relacionada con el desbloqueo de <code>kindhabit_premium</code> es manejada completamente por Google Play. Polychroma nunca recibe ni almacena tu información de pago.</p>
         </section>
@@ -305,8 +330,13 @@
             <h1>KindHabit 隐私政策</h1>
             <p class="meta-date">最后更新：2026年6月16日</p>
             <p>由 <strong>Polychroma</strong> 开发的 KindHabit 极其重视您的隐私。本文件详细说明了我们最低限度的数据足迹。</p>
-            <h2>1. 数据存储 (离线优先)</h2>
-            <p>KindHabit 采用严格的离线优先理念设计。您所有的习惯记录、目标和统计数据仅存储在您设备的本地存储中。我们不会同步、读取或将您的习惯数据上传到任何外部服务器。</p>
+            
+            <h2>1. 数据存储与 AI 处理</h2>
+            <p>KindHabit 采用核心的离线优先理念设计。默认情况下，您所有的习惯记录、目标和统计数据仅存储在您设备的本地存储中。</p>
+            <div class="highlight-notice">
+                <strong>AI 分析功能：</strong> 为了向您提供个性化的总结，您输入的笔记会安全地即时传输给我们的第三方 AI 供应商 (Groq)。我们的环境严格按照“零数据保留” (Zero Data Retention) 政策运行。这保证了您的数据 <strong>绝不会被存储或记录在您的设备之外的任何地方</strong>，也绝对不会被用于训练任何人工智能模型。供应商仅处理请求并立即将其遗忘。
+            </div>
+            
             <h2>2. 第三方服务</h2>
             <p>为确保基本的应用程序功能，我们使用标准的 Google 服务，这些服务可能会收集设备数据：</p>
             <ul>
@@ -314,6 +344,7 @@
                 <li>Google Play 结算 (用于管理高级版本)</li>
             </ul>
             <p><em>注：KindHabit 不使用侵入性的跟踪 SDK 或广告网络。</em></p>
+            
             <h2>3. 支付</h2>
             <p>与解锁 <code>kindhabit_premium</code> 相关的任何交易均完全由 Google Play 处理。Polychroma 绝不接收或存储您的付款信息。</p>
         </section>
@@ -321,7 +352,6 @@
     </div>
 
     <script>
-        // Funkcja do aktualizacji URL bez przeładowania strony oraz wywołania odświeżenia widoku
         function updateParamsAndReload() {
             const app = document.getElementById('appSelect').value;
             const lang = document.getElementById('langSelect').value;
@@ -334,43 +364,38 @@
             updateView();
         }
 
-        // Główna logika wyboru i prezentacji odpowiedniej sekcji html
         function updateView() {
             const urlParams = new URLSearchParams(window.location.search);
             const urlApp = urlParams.get('app');
             const urlLang = urlParams.get('lang');
 
-            // Jeśli parametry nie istnieją, spróbuj pobrać ostatnio używany język (localStorage ze strony głównej)
             const savedLang = localStorage.getItem('polychroma_pref_lang');
             
             const app = urlApp || 'ideaon';
             const lang = urlLang || savedLang || 'pl';
 
-            // Walidacja czy mamy takie wartości w selectach
             const appSelect = document.getElementById('appSelect');
             const langSelect = document.getElementById('langSelect');
 
             if (appSelect.querySelector(`option[value="${app}"]`)) {
                 appSelect.value = app;
             } else {
-                appSelect.value = 'ideaon'; // fallback
+                appSelect.value = 'ideaon';
             }
 
             if (langSelect.querySelector(`option[value="${lang}"]`)) {
                 langSelect.value = lang;
             } else {
-                langSelect.value = 'pl'; // fallback
+                langSelect.value = 'pl';
             }
 
             const finalApp = appSelect.value;
             const finalLang = langSelect.value;
 
-            // Zaktualizuj tytuł dokumentu w przeglądarce
             const appName = finalApp.charAt(0).toUpperCase() + finalApp.slice(1);
             document.title = `Privacy Policy - ${appName}`;
             document.documentElement.lang = finalLang;
 
-            // Ukryj wszystko i pokaż tylko właściwą sekcję
             document.querySelectorAll('.policy-section').forEach(sec => {
                 sec.style.display = 'none';
             });
@@ -381,15 +406,11 @@
             if (targetSection) {
                 targetSection.style.display = 'block';
             } else {
-                // Gdyby z jakiegoś powodu sekcja nie istniała - awaryjnie włącz Ideaon-PL
                 document.getElementById('ideaon-pl').style.display = 'block';
             }
         }
 
-        // Nasłuchiwanie zmian w historii (kliknięcie 'Wstecz' w przeglądarce)
         window.addEventListener('popstate', updateView);
-        
-        // Uruchom podczas ładowania strony
         window.addEventListener('DOMContentLoaded', updateView);
     </script>
 </body>
